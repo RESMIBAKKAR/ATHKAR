@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>الأذكار — حصن المسلم</title>
+<meta name="theme-color" content="#0B3D3A">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="top">
+    <div class="top-row">
+      <div class="brand">
+        <div class="mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="#0B3D3A" stroke-width="1.4" opacity=".5"/><path d="M12 3.5 20.5 12 12 20.5 3.5 12Z" stroke="#0B3D3A" stroke-width="1.8"/></svg>
+        </div>
+        <div>
+          <h1>الأذكار</h1>
+          <p>حصن المسلم اليومي</p>
+        </div>
+      </div>
+      <button class="icon-btn" id="installBtn" title="تثبيت التطبيق">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+      </button>
+    </div>
+    <div class="hero-line" id="heroLine">﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾</div>
+  </header>
+
+  <div class="chip-row" id="chipRow"></div>
+
+  <main id="mainView"></main>
+
+  <div id="toast"></div>
+
+  <nav class="bottom">
+    <button class="nav-btn active" data-view="adhkar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+      الأذكار
+    </button>
+    <button class="nav-btn" data-view="sabha">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="4" r="1.6"/><circle cx="12" cy="20" r="1.6"/><circle cx="20" cy="12" r="1.6"/><circle cx="4" cy="12" r="1.6"/><circle cx="17" cy="7" r="1.6"/><circle cx="7" cy="17" r="1.6"/><circle cx="17" cy="17" r="1.6"/><circle cx="7" cy="7" r="1.6"/></svg>
+      السبحة
+    </button>
+    <button class="nav-btn" data-view="reminder">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      التذكير
+    </button>
+  </nav>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
